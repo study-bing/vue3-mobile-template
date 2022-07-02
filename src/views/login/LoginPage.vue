@@ -1,7 +1,5 @@
 <template>
-    <div class="hello">hello</div>
-    {{ useUserStoreHook().name }}
-    <FontIcon icon="team-iconlogo" svg />
+    <div class="hello">hello {{ useUserStoreHook().name }}</div>
 </template>
 
 <script setup lang="ts">

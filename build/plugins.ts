@@ -6,7 +6,6 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { resolve } from 'path'
-import { createStyleImportPlugin, VxeTableResolve } from 'vite-plugin-style-import'
 import svgLoader from 'vite-svg-loader'
 
 export function getPluginsList() {
@@ -38,9 +37,6 @@ export function getPluginsList() {
             ],
             // Specify symbolId format
             symbolId: 'icon-[dir]-[name]',
-        }),
-        createStyleImportPlugin({
-            resolves: [VxeTableResolve()],
         }),
         // svg组件化支持
         svgLoader(),

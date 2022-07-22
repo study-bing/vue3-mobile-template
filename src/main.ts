@@ -3,7 +3,6 @@ import App from './App.vue'
 import router from './router'
 import { setupStore } from '@/store'
 import { getServerConfig } from './config'
-import { useTable } from '@/plugins/vxe-table'
 // 引入重置样式
 import './style/reset.scss'
 // 导入公共样式
@@ -22,6 +21,5 @@ getServerConfig(app).then(async () => {
     app.use(router)
     await router.isReady()
     setupStore(app)
-    app.use(useTable)
     app.mount('#app')
 })

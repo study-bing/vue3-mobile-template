@@ -2,8 +2,6 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import NProgress from '@/utils/progress'
 import { toRouteType } from './types'
 
-import baseRouter from './modules/base'
-
 const routes: RouteRecordRaw[] = [
     {
         path: '/login',
@@ -13,7 +11,6 @@ const routes: RouteRecordRaw[] = [
         path: '/',
         component: () => import('@/layout/Index.vue'),
     },
-    baseRouter,
 ]
 const router = createRouter({
     history: createWebHistory(),

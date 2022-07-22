@@ -1,24 +1,18 @@
 <template>
     <section class="view-content">
-        <top-header />
-        <section class="view-body">
-            <left-menu />
-            <router-view>
-                <template #default="{ Component, route }">
-                    <transition name="fade" mode="out-in">
-                        <section :key="route.path" class="router-content">
-                            <component :is="Component" />
-                        </section>
-                    </transition>
-                </template>
-            </router-view>
-        </section>
+        <router-view>
+            <template #default="{ Component, route }">
+                <transition name="fade" mode="out-in">
+                    <section :key="route.path" class="router-content">
+                        <component :is="Component" />
+                    </section>
+                </transition>
+            </template>
+        </router-view>
     </section>
 </template>
 
 <script setup lang="ts">
-import LeftMenu from './components/LeftMenu.vue'
-import TopHeader from './components/TopHeader.vue'
 defineOptions({
     name: 'layoutIndex',
 })
@@ -35,14 +29,5 @@ defineOptions({
     flex: auto;
     overflow: auto;
     display: flex;
-}
-
-.router-content {
-    padding: 6px;
-    background-color: #e8ecf0;
-    flex: auto;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
 }
 </style>

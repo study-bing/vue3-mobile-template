@@ -17,7 +17,6 @@ specifiers:
     axios: ^0.27.2
     consola: ^2.15.3
     echarts: ^5.3.3
-    element-plus: ^2.2.5
     eslint: ^8.8.0
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-vue: ^8.4.1
@@ -65,7 +64,6 @@ dependencies:
     axios: 0.27.2
     consola: 2.15.3
     echarts: 5.3.3
-    element-plus: 2.2.5_vue@3.2.37
     mitt: 3.0.0
     nprogress: 0.2.0
     path: 0.12.7
@@ -748,25 +746,6 @@ packages:
             postcss-selector-parser: 6.0.10
         dev: true
 
-    /@ctrl/tinycolor/3.4.1:
-        resolution:
-            {
-                integrity: sha512-ej5oVy6lykXsvieQtqZxCOaLT+xD4+QNarq78cIYISHmZXshCvROLudpQN3lfL8G0NL7plMSSK+zlyvCaIJ4Iw==,
-            }
-        engines: { node: '>=10' }
-        dev: false
-
-    /@element-plus/icons-vue/2.0.5_vue@3.2.37:
-        resolution:
-            {
-                integrity: sha512-jvNWyKcdvPvMDLTWjghrPY+bYHKqh7hbAFIPe+HWR073zilzt33csREzmKx3VwhdlJUW5u0nCqN+0rwI8jlH+w==,
-            }
-        peerDependencies:
-            vue: ^3.2.0
-        dependencies:
-            vue: 3.2.37
-        dev: false
-
     /@endemolshinegroup/cosmiconfig-typescript-loader/3.0.2_w2cfr5gwraqciqu2ku3x4g3hhm:
         resolution:
             {
@@ -804,22 +783,6 @@ packages:
         transitivePeerDependencies:
             - supports-color
         dev: true
-
-    /@floating-ui/core/0.7.3:
-        resolution:
-            {
-                integrity: sha512-buc8BXHmG9l82+OQXOFU3Kr2XQx9ys01U/Q9HMIrZ300iLc8HLMgh7dcCqgYzAzf4BkoQvDcXf5Y+CuEZ5JBYg==,
-            }
-        dev: false
-
-    /@floating-ui/dom/0.5.3:
-        resolution:
-            {
-                integrity: sha512-vpjWB1uC7rajvgA58uzlJZgtWqrdDQLw+XVA3w63ZTmsWwRmVd0Gl5Dy9VMAViI9cP7hBWaJt23Jy3AVgVYnoQ==,
-            }
-        dependencies:
-            '@floating-ui/core': 0.7.3
-        dev: false
 
     /@humanwhocodes/config-array/0.9.5:
         resolution:
@@ -939,13 +902,6 @@ packages:
             picomatch: 2.3.1
         dev: true
 
-    /@sxzz/popperjs-es/2.11.7:
-        resolution:
-            {
-                integrity: sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ==,
-            }
-        dev: false
-
     /@trysound/sax/0.2.0:
         resolution:
             {
@@ -959,22 +915,6 @@ packages:
                 integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==,
             }
         dev: true
-
-    /@types/lodash-es/4.17.6:
-        resolution:
-            {
-                integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==,
-            }
-        dependencies:
-            '@types/lodash': 4.14.182
-        dev: false
-
-    /@types/lodash/4.14.182:
-        resolution:
-            {
-                integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==,
-            }
-        dev: false
 
     /@types/minimatch/3.0.5:
         resolution:
@@ -1722,13 +1662,6 @@ packages:
         engines: { node: '>=8' }
         dev: true
 
-    /async-validator/4.1.1:
-        resolution:
-            {
-                integrity: sha512-p4DO/JXwjs8klJyJL8Q2oM4ks5fUTze/h5k10oPPKMiLe1fj3G1QMzPHNmN1Py4ycOk7WlO2DcGXv1qiESJCZA==,
-            }
-        dev: false
-
     /asynckit/0.4.0:
         resolution:
             {
@@ -2447,13 +2380,6 @@ packages:
         engines: { node: '>=8' }
         dev: true
 
-    /dayjs/1.11.3:
-        resolution:
-            {
-                integrity: sha512-xxwlswWOlGhzgQ4TKzASQkUhqERI3egRNqgV4ScR8wlANA/A9tZ7miXa44vTTKEq5l7vWoL5G57bG3zA+Kow0A==,
-            }
-        dev: false
-
     /debug/2.6.9:
         resolution:
             {
@@ -2691,34 +2617,6 @@ packages:
                 integrity: sha512-92JdgyRlcNDwuy75MjuFSb3clt6DGJ2IXSpg0MCjKd3JV9eSmuUAIyWiGAp/EtT0z2D4rqbYqThQLV90maH3Zw==,
             }
         dev: true
-
-    /element-plus/2.2.5_vue@3.2.37:
-        resolution:
-            {
-                integrity: sha512-Kl0yn/PQca5YQo3M3NPBP4Xl71NQuMtDx5zNXZGVyl5FjdMujXiFB9SXKYGDUCgFU3d/Rl14vB4Fpmcl2Iz+Hw==,
-            }
-        peerDependencies:
-            vue: ^3.2.0
-        dependencies:
-            '@ctrl/tinycolor': 3.4.1
-            '@element-plus/icons-vue': 2.0.5_vue@3.2.37
-            '@floating-ui/dom': 0.5.3
-            '@popperjs/core': /@sxzz/popperjs-es/2.11.7
-            '@types/lodash': 4.14.182
-            '@types/lodash-es': 4.17.6
-            '@vueuse/core': 8.9.1_vue@3.2.37
-            async-validator: 4.1.1
-            dayjs: 1.11.3
-            escape-html: 1.0.3
-            lodash: 4.17.21
-            lodash-es: 4.17.21
-            lodash-unified: 1.0.2_3ib2ivapxullxkx3xftsimdk7u
-            memoize-one: 6.0.0
-            normalize-wheel-es: 1.1.2
-            vue: 3.2.37
-        transitivePeerDependencies:
-            - '@vue/composition-api'
-        dev: false
 
     /emoji-regex/8.0.0:
         resolution:
@@ -3069,13 +2967,6 @@ packages:
             }
         engines: { node: '>=6' }
         dev: true
-
-    /escape-html/1.0.3:
-        resolution:
-            {
-                integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==,
-            }
-        dev: false
 
     /escape-string-regexp/1.0.5:
         resolution:
@@ -4695,28 +4586,6 @@ packages:
             p-locate: 5.0.0
         dev: true
 
-    /lodash-es/4.17.21:
-        resolution:
-            {
-                integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==,
-            }
-        dev: false
-
-    /lodash-unified/1.0.2_3ib2ivapxullxkx3xftsimdk7u:
-        resolution:
-            {
-                integrity: sha512-OGbEy+1P+UT26CYi4opY4gebD8cWRDxAT6MAObIVQMiqYdxZr1g3QHWCToVsm31x2NkLS4K3+MC2qInaRMa39g==,
-            }
-        peerDependencies:
-            '@types/lodash-es': '*'
-            lodash: '*'
-            lodash-es: '*'
-        dependencies:
-            '@types/lodash-es': 4.17.6
-            lodash: 4.17.21
-            lodash-es: 4.17.21
-        dev: false
-
     /lodash.get/4.4.2:
         resolution:
             {
@@ -4743,6 +4612,7 @@ packages:
             {
                 integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==,
             }
+        dev: true
 
     /log-symbols/4.1.0:
         resolution:
@@ -4858,13 +4728,6 @@ packages:
             {
                 integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==,
             }
-
-    /memoize-one/6.0.0:
-        resolution:
-            {
-                integrity: sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==,
-            }
-        dev: false
 
     /meow/8.1.2:
         resolution:
@@ -5204,13 +5067,6 @@ packages:
             }
         engines: { node: '>=0.10.0' }
         dev: true
-
-    /normalize-wheel-es/1.1.2:
-        resolution:
-            {
-                integrity: sha512-scX83plWJXYH1J4+BhAuIHadROzxX0UBF3+HuZNY2Ks8BciE7tSTQ+5JhTsvzjaO0/EJdm4JBGrfObKxFf3Png==,
-            }
-        dev: false
 
     /npm-run-path/4.0.1:
         resolution:

@@ -5,10 +5,6 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
     export interface GlobalComponents {
-        ObDialog: typeof import('./src/components/obDialog/ObDialog.vue')['default']
-        ObInput: typeof import('./src/components/obInput/ObInput.vue')['default']
-        ObTablePage: typeof import('./src/components/obTable/ObTablePage.vue')['default']
-        ObTabs: typeof import('./src/components/obTabs/ObTabs.vue')['default']
         RouterLink: typeof import('vue-router')['RouterLink']
         RouterView: typeof import('vue-router')['RouterView']
         SvgIcon: typeof import('./src/components/svgicon/SvgIcon.vue')['default']

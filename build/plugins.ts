@@ -7,12 +7,17 @@ import Components from 'unplugin-vue-components/vite'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { resolve } from 'path'
 import svgLoader from 'vite-svg-loader'
-
+import { VantResolver } from 'unplugin-vue-components/resolvers'
+import { viteBuildInfo } from './info'
+import { visualizer } from 'rollup-plugin-visualizer'
 export function getPluginsList() {
+    const lifecycle = process.env.npm_lifecycle_event
     return [
         vue(),
         // jsx、tsx语法支持
         vueJsx(),
+        // 打包信息
+        viteBuildInfo(),
         DefineOptions(),
         // 线上环境删除console
         removeConsole(),
@@ -28,6 +33,7 @@ export function getPluginsList() {
                     names: ['RouterLink', 'RouterView'],
                 },
             ],
+            resolvers: [VantResolver()],
         }),
         createSvgIconsPlugin({
             // Specify the icon folder to be cached
@@ -40,5 +46,9 @@ export function getPluginsList() {
         }),
         // svg组件化支持
         svgLoader(),
+        // 打包分析
+        lifecycle === 'report'
+            ? visualizer({ open: true, brotliSize: true, filename: 'report.html' })
+            : null,
     ]
 }

@@ -8,7 +8,8 @@ import './style/reset.scss'
 // 导入公共样式
 import './style/index.scss'
 import 'virtual:svg-icons-register'
-
+import 'vant/es/toast/style'
+import 'vant/es/dialog/style'
 const app = createApp(App)
 
 // 自定义指令
